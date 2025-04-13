@@ -9,3 +9,7 @@ This project demonstrates real-time face detection and facial landmark tracking 
 
 ![image](https://github.com/user-attachments/assets/478fbd42-cc29-4523-9c96-e2067a183875)
 
+# Project 3:: Drowsy Face Detection with OpenCV and Facial Landmarks
+This project demonstrates a simple yet effective way to detect drowsiness using facial landmarks and OpenCV. It tracks eye aspect ratio (EAR) in real-time via webcam, and alerts the user when signs of drowsiness (e.g., prolonged eye closure) are detected.
+
+![image](https://github.com/user-attachments/assets/d8b9c29c-7a06-4915-8134-66cde5863d8d)
