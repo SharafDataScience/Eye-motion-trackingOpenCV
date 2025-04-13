@@ -23,14 +23,14 @@ pip install opencv-python dlib imutils scipy playsound
 
 You also need:
 
-- `shape_predictor_68_face_landmarks.dat`: [Download here](https://drive.google.com/file/d/1Z1MZgVbhE8b_0C1dLO2_oOfBqbiWnA5I/view?usp=sharing) and extract it into the project directory.
+- `shape_predictor_68_face_landmarks.dat`.
 
-## 📁 Files
+## Files
 
 - `DrowsyFaceLandmarksOpenCV.ipynb`: Jupyter Notebook with the implementation
 - `shape_predictor_68_face_landmarks.dat`: Pretrained model for landmark detection (not included, see above)
 
-## 📷 How It Works
+## How It Works
 
 1. **Facial Detection**:
    - Uses `dlib.get_frontal_face_detector()` to detect faces.
@@ -42,7 +42,7 @@ You also need:
 4. **Alert**:
    - Plays an alert sound using `playsound`.
 
-## 🧠 Key Functions
+## Key Functions
 
 ### `eye_aspect_ratio(eye)`
 
@@ -58,33 +58,17 @@ If EAR < 0.25 consistently for ~48 frames (customizable), it flags drowsiness.
 
 Opens the default webcam for real-time detection.
 
-## 🖼️ Example
 
-![screenshot or gif of the app running – optional if you're including this in markdown format]
-
-## ⚙️ Parameters
+##  Parameters
 
 You can tune:
 
 - `EYE_AR_THRESH`: EAR threshold below which eyes are considered closed
 - `EYE_AR_CONSEC_FRAMES`: Number of consecutive frames the eyes must be below the threshold
 
-## 🔊 Audio Alert
+## Audio Alert
 
 Ensure an `alarm.wav` or another sound file exists and is accessible to the `playsound` function to enable sound alerts.
-
-## ❗ Troubleshooting
-
-- If `dlib` installation fails, ensure you have CMake and a proper build environment.
-- Ensure the correct path to the shape predictor file is provided.
-- On some systems, audio may not play due to `playsound` limitations; consider alternatives like `pygame` or `simpleaudio`.
-
-## 📌 To-Do
-
-- [ ] Add GUI support
-- [ ] Integrate head-pose detection
-- [ ] Improve blink detection robustness
-- [ ] Package as a standalone app
 
 
 
