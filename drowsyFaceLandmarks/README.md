@@ -23,7 +23,7 @@ pip install opencv-python dlib imutils scipy playsound
 
 You also need:
 
-- `shape_predictor_68_face_landmarks.dat`: [Download here](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) and extract it into the project directory.
+- `shape_predictor_68_face_landmarks.dat`: [Download here](https://drive.google.com/file/d/1Z1MZgVbhE8b_0C1dLO2_oOfBqbiWnA5I/view?usp=sharing) and extract it into the project directory.
 
 ## 📁 Files
 
